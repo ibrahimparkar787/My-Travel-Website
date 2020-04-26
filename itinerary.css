@@ -1,0 +1,30 @@
+body{
+	background-image: url("it_bg.jpg");
+	color: white;
+	font-size: 18px;
+	font-family: Arial-black;
+
+}
+
+h1{
+	color: #ff4f58ff;
+	font-size: 40px;
+	font-family: Arial-black;
+}
+
+h2{
+	color: #669db3ff;
+	font-size: 30px;
+	font-family: Arial-black;
+
+}
+h3{
+	color: #a69c94ff;
+	font-size: 25px;
+	font-family: Arial-black;
+}
+a{
+	color: #ff4f58ff;
+	
+}
+

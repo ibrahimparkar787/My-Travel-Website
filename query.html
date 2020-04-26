@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Query From</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="form.css">
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
+</head>
+<body>
+	<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+	<a href="projHome.html"> <button id="homeBtn" title="Go to home">HOME</button></a>
+	<form method="post" action="mailto:parkar.ibrahim787@gmail.com" enctype="multipart/form-data">
+		<fieldset>
+			<legend class="txt_mal_main">QUERY</legend>
+				<h3 class="txt_mal">Incident Number</h3>
+				<input type="text" name="txt_box" id="uni_id" required disabled>
+				<button onclick="generate()" autofocus>Generate</button>
+				<h3 class="txt_mal">Pax Name</h3>
+				<input type="text" name="Guest_Name" class="txt_mal_in" required placeholder="Enter Pax Name" pattern="[a-zA-Z\s]{3,25}" title="Enter min 3 letters">
+				<h3 class="txt_mal">Travel Start Date</h3>
+				<input type="date" name="sot" required min="2019-09-20" max="2019-12-30">
+				<h3 class="txt_mal">Travel End Date</h3>
+				<input type="date" name="eot"required min="2019-09-21" max="2019-12-31">
+				<h3 class="txt_mal" >Start Point</h3>
+				<input type="text" name="Start_Point" class="txt_mal_in" required placeholder="Enter Start Point" pattern="[a-zA-Z\s]{3,15}" title="Enter proper city">
+				<h3 class="txt_mal">End Point</h3>
+				<input type="text" name="End_Point" class="txt_mal_in" required placeholder="Enter End Point" pattern="[a-zA-Z\s]{3,15}" title="Enter proper city">
+				<h3 class="txt_mal">No. Of Pax</h3>
+				<input type="text" name="NOP" class="txt_mal_in" required placeholder="Enter No. Of Pax" pattern="[0-9]{1,6}" title="Enter min 1 max 6 numbers">
+				<h3 class="txt_mal">Roomimg</h3>
+				<input type="text" name="Roomimg" class="txt_mal_in" required placeholder="Enter type of room" pattern="[a-zA-Z0-9\s]{3,15}" title="Enter from the options">
+				<ul type="null">
+					<li>Single</li>
+					<li>Double</li>
+					<li>Triple</li>
+					<li>Child With Bed(CWB)</li>
+					<li>Child With No Bed(CNB)</li>
+					<li>Infant</li>
+				</ul>
+				<h3 class="txt_mal">Brief Itinerary</h3>
+				<textarea name="BIT" rows="10" cols="20" class="txt_mal_in" required placeholder="Enter the details of the tour" pattern="[a-zA-Z0-9\s]{15,250}" title="proper Itinerary"></textarea>
+				<h3 class="txt_mal">Hotel Category</h3>
+				<div class="rating">
+            	<input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+            	<label for="star5" >☆</label>
+            	<input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
+            	<label for="star4" >☆</label>
+            	<input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
+            	<label for="star3" >☆</label>
+            	<input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
+            	<label for="star2" >☆</label>
+            	<input id="star1" name="star" type="radio" value="1" class="radio-btn hide" required />
+            	<label for="star1" >☆</label>
+            	<div class="clear"></div>
+        		</div>
+				<h3 class="txt_mal">Meal Plan</h3>
+				<select required>
+					<option> </option>
+					<option value="CP">CP</option>
+					<option value="AP">AP</option>
+					<option value="MAP">MAP</option>
+				</select>
+				<h3 class="txt_mal">Vehicle Type</h3>
+				<select required>
+					<option> </option>
+					<option>Dzire</option>
+					<option>Etios</option>
+					<option>Innova</option>
+					<option>Crysta</option>
+				</select> <br> <br>
+				<input type="submit" name="Email" class="btn">
+		</fieldset>
+	</form>
+	<script type="text/javascript">
+		var rum = Math.floor(100000 + Math.random() * 900000);
+		function generate() 
+		{
+			document.getElementById('uni_id').value=rum;
+		}
+
+		mybutton = document.getElementById("topBtn");
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+  			if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) 
+  			{
+    			mybutton.style.display = "block";
+  			} 
+  			else 
+  			{
+    			mybutton.style.display = "none";
+  			}
+		}
+		function topFunction() 
+		{
+  			document.body.scrollTop = 0; 
+  			document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+</html>

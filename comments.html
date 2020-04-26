@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comments</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+	<a href="projHome.html"> <button id="homeBtn" title="Go to home">HOME</button></a>
+	<form method="post" action="decom.php">
+		<fieldset>
+			<legend class="txt_mal_main">Comments on the website</legend>
+				<h3 class="txt_mal">Comments</h3>
+				<textarea name="commentss" rows="10" cols="20" class="txt_mal_in" id="com" required placeholder="Enter the details of the tour" pattern="[a-zA-Z0-9\s]{15,250}" title="proper Itinerary"></textarea>
+				<input type="submit" name="submit" value="Send">
+		</fieldset>
+	</form>
+	<script type="text/javascript">
+		mybutton = document.getElementById("topBtn");
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+  			if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) 
+  			{
+    			mybutton.style.display = "block";
+  			} 
+  			else 
+  			{
+    			mybutton.style.display = "none";
+  			}
+		}
+		function topFunction() 
+		{
+  			document.body.scrollTop = 0; 
+  			document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+</html>

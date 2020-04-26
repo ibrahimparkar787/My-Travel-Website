@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Form</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+	<a href="projHome.html"> <button id="homeBtn" title="Go to home">HOME</button></a>
+    <fieldset>
+		<legend class="txt_mal_main">TOUR FEEDBACK FORM</legend>
+			<form action="" method="post">
+				<h3 class="txt_mal">Form Number</h3>
+				<input type="text" name="Form_Number" id="uni_id" required disabled>
+				<button onclick="generate()" autofocus>Generate</button>
+				<h3 class="txt_mal">Guest Name</h3>
+				<input type="text" name="Guest_Name" class="txt_mal_in" required autofocus placeholder="Enter Guest Name" pattern="[a-zA-Z\s]{3,25}" title="Enter min 3 letters">
+				<h3 class="txt_mal">Travel Start Date</h3>
+				<input type="date" name="sot" required min="2019-09-20" max="2019-12-30">
+				<h3 class="txt_mal">Travel End Date</h3>
+				<input type="date" name="eot"required min="2019-09-21" max="2019-12-31">
+				<h3 class="txt_mal" >Destination</h3>
+				<input type="text" name="Destination" class="txt_mal_in" required placeholder="Enter Destination" pattern="[a-zA-Z\s]{3,15}" title="Enter proper city">
+				<h3 class="txt_mal">Moblie Number</h3>
+				<input type="tel" name="Moblie_Number" class="txt_mal_in" required placeholder="Enter Moblie Number" pattern="[0-9]{10}" title="Enter 10 Digits">
+				<h3 class="txt_mal">Email Id</h3>
+				<input type="text" name="Email_Id" class="txt_mal_in" required placeholder="Enter Email Id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" title="Enter Proper Email Id">
+				<h2 class="txt_mal_main">SERVICES</h2>
+				<h3 class="txt_mal">Accommodation</h3>
+				<div class="rating">
+            	<input id="star5-a" name="star'5-a" type="radio" value="5" class="radio-btn hide" />
+            	<label for="star5-a" >☆</label>
+            	<input id="star4-a" name="star4-a" type="radio" value="4" class="radio-btn hide" />
+            	<label for="star4-a" >☆</label>
+            	<input id="star3-a" name="star3-a" type="radio" value="3" class="radio-btn hide" />
+            	<label for="star3-a" >☆</label>
+            	<input id="star2-a" name="star2-a" type="radio" value="2" class="radio-btn hide" />
+            	<label for="star2-a" >☆</label>
+            	<input id="star1-a" name="star1-a" type="radio" value="1" class="radio-btn hide" required />
+            	<label for="star1-a" >☆</label>
+            	<div class="clear"></div>
+        		</div>
+        		<h3 class="txt_mal">Transport</h3>
+				<div class="rating">
+            	<input id="star5-t" name="star5-t" type="radio" value="5" class="radio-btn hide" />
+            	<label for="star5-t" >☆</label>
+            	<input id="star4-t" name="star4-t" type="radio" value="4" class="radio-btn hide" />
+            	<label for="star4-t" >☆</label>
+            	<input id="star3-t" name="star3-t" type="radio" value="3" class="radio-btn hide" />
+            	<label for="star3-t" >☆</label>
+            	<input id="star2-t" name="star2-t" type="radio" value="2" class="radio-btn hide" />
+            	<label for="star2-t" >☆</label>
+            	<input id="star1-t" name="star1-t" type="radio" value="1" class="radio-btn hide" required />
+            	<label for="star1-t" >☆</label>
+            	<div class="clear"></div>
+        		</div>
+        		<h3 class="txt_mal">Sightseeing</h3>
+				<div class="rating">
+            	<input id="star5-s" name="star5-s" type="radio" value="5" class="radio-btn hide" />
+            	<label for="star5-s" >☆</label>
+            	<input id="star4-s" name="star4-s" type="radio" value="4" class="radio-btn hide" />
+            	<label for="star4-s" >☆</label>
+            	<input id="star3-s" name="star3-s" type="radio" value="3" class="radio-btn hide" />
+            	<label for="star3-s" >☆</label>
+            	<input id="star2-s" name="star2-s" type="radio" value="2" class="radio-btn hide" />
+            	<label for="star2-s" >☆</label>
+            	<input id="star1-s" name="star1-s" type="radio" value="1" class="radio-btn hide" required />
+            	<label for="star1-s" >☆</label>
+            	<div class="clear"></div>
+        		</div>
+        		<h3 class="txt_mal">Guide Service(if any)</h3>
+				<div class="rating">
+            	<input id="star5-g" name="star5-g" type="radio" value="5" class="radio-btn hide" />
+            	<label for="star5-g" >☆</label>
+            	<input id="star4-g" name="star4-g" type="radio" value="4" class="radio-btn hide" />
+            	<label for="star4-g" >☆</label>
+            	<input id="star3-g" name="star3-g" type="radio" value="3" class="radio-btn hide" />
+            	<label for="star3-g" >☆</label>
+            	<input id="star2-g" name="star2-g" type="radio" value="2" class="radio-btn hide" />
+            	<label for="star2-g" >☆</label>
+            	<input id="star1-g" name="star1-g" type="radio" value="1" class="radio-btn hide" />
+            	<label for="star1-g" >☆</label>
+            	<div class="clear"></div>
+        		</div>
+        		<h3 class="txt_mal">Tour Manager(if any)</h3>
+				<div class="rating">
+            	<input id="star5-m" name="star5-m" type="radio" value="5" class="radio-btn hide" />
+            	<label for="star5-m" >☆</label>
+            	<input id="star4-m" name="star4-m" type="radio" value="4" class="radio-btn hide" />
+            	<label for="star4-m" >☆</label>
+            	<input id="star3-m" name="star3-m" type="radio" value="3" class="radio-btn hide" />
+            	<label for="star3-m" >☆</label>
+            	<input id="star2-m" name="star2-m" type="radio" value="2" class="radio-btn hide" />
+            	<label for="star2-m" >☆</label>
+            	<input id="star1-m" name="star1-m" type="radio" value="1" class="radio-btn hide" />
+            	<label for="star1-m" >☆</label>
+            	<div class="clear"></div>
+        		</div>
+        		<h3 class="txt_mal">Overall Experience With Travel Height</h3>
+				<div class="rating">
+            	<input id="star5-o" name="star5-o" type="radio" value="5" class="radio-btn hide" />
+            	<label for="star5-o" >☆</label>
+            	<input id="star4-o" name="star4-o" type="radio" value="4" class="radio-btn hide" />
+            	<label for="star4-o" >☆</label>
+            	<input id="star3-o" name="star3-o" type="radio" value="3" class="radio-btn hide" />
+            	<label for="star3-o" >☆</label>
+            	<input id="star2-o" name="star2-o" type="radio" value="2" class="radio-btn hide" />
+            	<label for="star2-o" >☆</label>
+            	<input id="star1-o" name="star1-o" type="radio" value="1" class="radio-btn hide" required />
+            	<label for="star1-o" >☆</label>
+            	<div class="clear"></div>
+        		</div>
+        		<h3 class="txt_mal">Highlights</h3>
+        		<input type="text" name="Highlights" class="txt_mal_in" required placeholder="Any highlight from tour" pattern="[a-zA-Z\s]{1,}" title="No swearing">
+        		<h3 class="txt_mal">Will you recommend Travel Height to your family and friends</h3>
+        		<input type="radio" name="radio-red" value="yes" title="yes"> Yes
+        		<input type="radio" name="radio-red" value="no" title="no"> No <br> <br>
+                <input type="submit" name="submit">
+			</form>
+	</fieldset>
+    <script type="text/javascript">
+        var rum = Math.floor(100000 + Math.random() * 900000);
+        function generate() 
+        {
+            document.getElementById('uni_id').value=rum;
+        }
+
+        mybutton = document.getElementById("topBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) 
+            {
+                mybutton.style.display = "block";
+            } 
+            else 
+            {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() 
+        {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

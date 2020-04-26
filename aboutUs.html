@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body vlink="#00FF00" style="background-image: url('abt_us_bg.jpg'); background-image: cover;">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="projHome.html">TRAVEL HEIGHT<img src=""></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNav">
+				<ul class="nav navbar-nav">
+					<li><a href="projHome.html">Home</a></li>
+					<li><a href="map.html">Map</a></li>
+					<li><a href="query.html">Query</a></li>
+					<li class="active"><a href="aboutUs.html">About Us</a></li>
+					<li><a href="comments.html">Comments</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="feedback.html">Feedback <span title="feedback" class="glyphicon glyphicon-envelope"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+		<h1 class="txt_mal_main">Why Travel With Us</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-10 txt_mal">
+					<ul>
+						<li class="q">
+							Information
+						</li>
+						<li class="a">
+							As you start planning a trip to India you will need all the information and advice regarding all aspects of the trip. <br> Quite passionately we share our expertise of over 25 years with you for no charge
+						</li>
+						<li class="q">
+							Peace of mind
+						</li>
+						<li class="a">
+							While on tour you will need flawless execution of all the daily activities.<br> <b>Quite honestly</b> we assign a consultant who talks to you on a regular basis.
+						</li>
+						<li class="q">
+							Memories of a lifetime
+						</li>
+						<li class="a">
+							Our aim is to make your trip the most memorable. <br> <b>Quite diligently</b> the whole team right from your drivers, the back office experts and the friendly field representatives work towards achieving it.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1 class="txt_mal_main">Contact Us</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-5 txt_mal">
+					<h3 class="glyphicon glyphicon-phone"> Moblie Number</h3>
+					<h4>8369318431</h4>
+				</div>
+				<div class="col-sm-5 txt_mal">
+					<h3 class="glyphicon glyphicon-envelope"> Email</h3>
+					<a href="mailto:parkar.ibrahim787@gmail.com"><h4>parkar.ibrahim787@gmail.com</h4></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-5"></div>
+				<div class="col-sm-7">
+					<a href="https://www.facebook.com/Travel-Height-2002749603296015/?modal=admin_todo_tour"><img src="follow_Us.png" width="150px" height="100px" title="follow us on facebook"></a>
+				</div>
+			</div>
+		</div>
+		<script>
+		$(document).ready(function()
+		{
+			$('li.q').hover(function()
+			{
+				$('li.a').slideUp();
+				$(this).next().show();
+			});
+		});
+		</script>
+</body>
+</html>

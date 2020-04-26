@@ -1,0 +1,182 @@
+/*Foreground mal*/
+.txt_mal_main
+{
+	font-size: 26px;
+	font-family: Arial;
+	text-align: center;
+  color: rgb(255,255,255);
+}
+.txt_mal
+{
+	font-size: 14px;
+	font-family: Arial;
+  color: rgb(255,255,255);
+}
+.txt_mal_in
+{
+	font-family: Arial-black;
+}
+a 
+{
+  color: #FF0000; 
+}
+a:hover 
+{
+  color: #00FF00; 
+}
+body
+{
+  background-color: black;
+}
+li 
+{
+  font-size: 16px;
+  font-weight: 12px;
+}
+li.a
+{
+  display:none;
+  color:rgb(0,220,10);
+}
+li.q
+{
+  cursor:pointer;
+}
+/*Button mal*/
+.btn:hover
+{
+background-image:none !important;
+background-color:rgb(225,0,0) !important;
+cursor: pointer;
+}
+#topBtn 
+{
+  display: none; 
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red; 
+  color: white;
+  cursor: pointer;
+  padding: 15px; 
+  border-radius: 10px;
+  font-size: 18px;
+}
+#topBtn:hover 
+{
+  background-color: #555;
+}
+#homeBtn 
+{
+  display: block; 
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red; 
+  color: white;
+  cursor: pointer;
+  padding: 15px; 
+  border-radius: 10px;
+  font-size: 18px;
+}
+#homeBtn:hover 
+{
+  background-color: #555;
+}
+
+input:focus{
+	background-color: yellow;
+}
+/*Background mal*/
+* 
+{
+  padding: 0;
+  margin: 0;
+}
+.load
+{
+  animation: slide 2s;
+}
+.slider
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  animation: slide 15s infinite;
+}
+.content
+{
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+}
+.principal
+{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.principal h1
+{
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.principal p
+{
+  font-size: 20px;
+}
+@keyframes slide
+{
+  0%
+  {
+    background-image: url("gateway_Of_India.jpg");
+  }
+  20%
+  {
+    background-image: url("gateway_Of_India.jpg");
+  }
+  20.01%
+  {
+    background-image: url("india_Gate.jpg");
+  }
+  40%
+  {
+    background-image: url("india_Gate.jpg");
+  }
+  40.01%
+  {
+    background-image: url("kashmir_Valley.jpg");
+  }
+  60%
+  {
+    background-image: url("kashmir_Valley.jpg");
+  }
+  60.01%
+  {
+    background-image: url("taj_Mahal.jpg");
+  }
+  80%
+  {
+    background-image: url("taj_Mahal.jpg");
+  }
+  80.01%
+  {
+    background-image: url("mount.jpg");
+  }
+  100%
+  {
+    background-image: url("mount.jpg");
+  }
+}
